@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Generator (OOP)</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Logo Generator</h1>
+    <form id="logoForm">
+        <label for="text">Enter text:</label>
+        <input type="text" id="text" required><br>
+
+        <label for="textColor">Choose the text color:</label>
+        <input type="color" id="textColor" required><br>
+
+        <label for="shape">Select a shape:</label>
+        <select id="shape" required>
+            <option value="circle">Circle</option>
+            <option value="triangle">Triangle</option>
+            <option value="square">Square</option>
+        </select><br>
+
+        <label for="shapeColor">Choose the shape color:</label>
+        <input type="color" id="shapeColor" required><br>
+
+        <button type="button" onclick="generateLogo()">Generate Logo</button>
+    </form>
+
+    <div id="logoContainer"></div>
+
+    <script src="logo_generator.js"></script>
+</body>
+</html>
